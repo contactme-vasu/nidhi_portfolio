@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Nidhi Gupta — CMA | Finance & Accounting Professional</title>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Mono:wght@300;400;500&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- Favicon: NG monogram in gold on dark -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%231A1612'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Georgia%2C serif' font-size='26' font-weight='400' fill='%23B8975A' letter-spacing='-1'%3ENG%3C/text%3E%3C/svg%3E"/>
+
   <style>
     *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
@@ -66,7 +70,7 @@
     }
     .hero-left {
       display: flex; flex-direction: column; justify-content: center;
-      padding: 8rem 4rem 4rem; position: relative; z-index: 1;
+      padding: 6.5rem 4rem 4rem; position: relative; z-index: 1;
     }
     .hero-eyebrow {
       font-family: 'DM Mono', monospace;
@@ -98,7 +102,7 @@
     .hero-contact a:hover { opacity: 0.7; }
     .hero-desc {
       max-width: 440px; line-height: 1.85; color: var(--muted);
-      margin-top: 2rem; font-size: 0.92rem;
+      margin-top: 1.5rem; font-size: 0.92rem;
       opacity: 0; animation: fadeUp 0.8s 0.8s forwards;
     }
     .hero-cta {
@@ -153,22 +157,6 @@
       font-size: 1.3rem; font-weight: 600; color: var(--gold);
     }
 
-    /* MARQUEE */
-    .marquee-wrap {
-      overflow: hidden; padding: 1rem 0; background: var(--ink);
-      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-    }
-    .marquee-track {
-      display: flex; gap: 3rem;
-      animation: marquee 30s linear infinite; white-space: nowrap;
-    }
-    .marquee-item {
-      font-family: 'DM Mono', monospace;
-      font-size: 0.68rem; letter-spacing: 0.15em;
-      text-transform: uppercase; color: var(--gold); flex-shrink: 0;
-    }
-    .marquee-dot { color: var(--rust); margin: 0 1rem; }
-
     /* SECTIONS */
     section { position: relative; z-index: 1; }
     .section-label {
@@ -185,9 +173,9 @@
 
     /* ABOUT */
     #about {
-      padding: 7rem 4rem;
+      padding: 5.5rem 4rem;
       display: grid; grid-template-columns: 1fr 1.6fr;
-      gap: 6rem; align-items: start;
+      gap: 4rem; align-items: start;
       max-width: 1300px; margin: 0 auto;
     }
     .about-left { position: sticky; top: 8rem; }
@@ -211,10 +199,10 @@
 
     /* EXPERIENCE */
     #experience { padding: 7rem 4rem; max-width: 1300px; margin: 0 auto; }
-    .exp-header { margin-bottom: 4rem; }
+    .exp-header { margin-bottom: 3rem; }
     .exp-item {
       display: grid; grid-template-columns: 220px 1fr;
-      gap: 3rem; padding: 2.5rem 0;
+      gap: 3rem; padding: 2rem 0;
       border-bottom: 1px solid var(--border); transition: padding 0.3s;
     }
     .exp-item:hover { padding-left: 0.8rem; }
@@ -265,9 +253,9 @@
     }
 
     /* SKILLS */
-    #skills { padding: 7rem 4rem; background: linear-gradient(160deg, #1A1612 60%, #2C1F14 100%); }
+    #skills { padding: 5.5rem 4rem; background: linear-gradient(160deg, #1A1612 60%, #2C1F14 100%); }
     .skills-inner { max-width: 1300px; margin: 0 auto; }
-    .skills-header { margin-bottom: 4rem; }
+    .skills-header { margin-bottom: 2rem; }
     .skills-header .section-label { color: var(--gold-light); }
     .skills-header .section-title { color: var(--cream); }
     .skills-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 3rem; }
@@ -305,7 +293,7 @@
 
     /* EDUCATION */
     #education { padding: 7rem 4rem; max-width: 1300px; margin: 0 auto; }
-    .edu-header { margin-bottom: 4rem; }
+    .edu-header { margin-bottom: 3rem; }
     .edu-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
     .edu-card {
       border: 1px solid var(--border); padding: 2rem;
@@ -319,8 +307,8 @@
     .edu-card:hover { border-color: var(--gold); }
     .edu-badge {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 2rem; font-weight: 300; color: var(--gold);
-      opacity: 0.3; margin-bottom: 0.5rem;
+      font-size: 2rem; font-weight: 400; color: #7a5c2e;
+      opacity: 0.8; margin-bottom: 0.5rem;
     }
     .edu-degree {
       font-family: 'Cormorant Garamond', serif;
@@ -330,11 +318,11 @@
     .edu-institution {
       font-family: 'DM Mono', monospace;
       font-size: 0.62rem; letter-spacing: 0.08em;
-      text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem;
+      text-transform: uppercase; color: #8a6f3e; margin-bottom: 0.4rem;
     }
     .edu-period {
       font-family: 'DM Mono', monospace;
-      font-size: 0.62rem; color: var(--muted); margin-bottom: 0.8rem;
+      font-size: 0.62rem; color: #5f5750; margin-bottom: 0.8rem;
     }
     .edu-score {
       display: inline-block;
@@ -343,12 +331,12 @@
       color: var(--gold); border: 1px solid var(--border);
       padding: 0.2rem 0.6rem; margin-bottom: 0.8rem;
     }
-    .edu-detail { font-size: 0.82rem; line-height: 1.65; color: var(--muted); }
+    .edu-detail { font-size: 0.82rem; line-height: 1.65; color: #4a433b; }
 
     /* CERTIFICATIONS */
     #certifications { padding: 7rem 4rem; background: var(--ink); }
     .cert-inner { max-width: 1300px; margin: 0 auto; }
-    .cert-header { margin-bottom: 4rem; }
+    .cert-header { margin-bottom: 3rem; }
     .cert-header .section-label { color: var(--gold-light); }
     .cert-header .section-title { color: var(--cream); }
     .cert-list { display: flex; flex-direction: column; gap: 1px; background: rgba(255,255,255,0.06); }
@@ -455,11 +443,6 @@
       <p class="hero-eyebrow">&#9632; Finance · Accounting · Analytics</p>
       <h1 class="hero-name">Nidhi<br><em>Gupta</em></h1>
       <p class="hero-title">CMA (AIR 25) · Finance & Accounting Professional</p>
-      <div class="hero-contact">
-        <a href="mailto:cmanidhigupta@yahoo.com">cmanidhigupta@yahoo.com</a>
-        <a href="tel:+917007662700">+91 700 766 2700</a>
-        <a href="https://www.linkedin.com/in/nidhiguptacma/" target="_blank">linkedin.com/in/nidhiguptacma</a>
-      </div>
       <p class="hero-desc">
         Finance professional with hands-on experience at ExxonMobil and HP across AR, GL reconciliation, financial reporting, taxation, and audit — skilled in SAP HANA, Power BI, Blackline, and financial modelling.
       </p>
@@ -472,37 +455,10 @@
       <div class="hero-monogram">NG</div>
       <div class="hero-badge">
         <span class="hero-badge-big">AIR</span>
-        <span class="hero-badge-text">25<br>CMA Final<br>ICAI · Dec 2023</span>
+        <span class="hero-badge-text">25<br>CMA Final<br>ICMAI · Dec 2023</span>
       </div>
     </div>
   </section>
-
-  <!-- MARQUEE -->
-  <div class="marquee-wrap">
-    <div class="marquee-track">
-      <span class="marquee-item">Accounts Receivable</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">GL Reconciliation</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">Cost Accounting</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">SAP HANA / S4</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">Power BI</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">Blackline</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">SOX Compliance</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">Financial Modelling</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">GST & Taxation</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">MIS Reporting</span><span class="marquee-dot">◆</span>
-      <!-- duplicate for seamless loop -->
-      <span class="marquee-item">Accounts Receivable</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">GL Reconciliation</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">Cost Accounting</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">SAP HANA / S4</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">Power BI</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">Blackline</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">SOX Compliance</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">Financial Modelling</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">GST & Taxation</span><span class="marquee-dot">◆</span>
-      <span class="marquee-item">MIS Reporting</span><span class="marquee-dot">◆</span>
-    </div>
-  </div>
 
   <!-- ABOUT -->
   <section id="about">
@@ -513,7 +469,7 @@
     </div>
     <div class="about-right reveal">
       <p class="about-text">
-        I'm a Certified Management Accountant (CMA) who cleared the ICAI Final exam in December 2023 with an All India Rank of 25 — a milestone that reflects both my passion and precision for finance. Currently working as an AR Analyst in Global Finance Operations at ExxonMobil, Bengaluru.
+        I'm a Certified Management Accountant (CMA) who cleared the ICMAI Final exam in December 2023 with an All India Rank of 25 — a milestone that reflects both my passion and precision for finance. Currently working as an AR Analyst in Global Finance Operations at ExxonMobil, Bengaluru.
       </p>
       <p class="about-text" style="margin-top: 1.2rem;">
         My experience spans global energy (ExxonMobil), Big Tech (HP), CA firm audits, and cost accounting apprenticeships — giving me a 360° view of finance operations. I bring technical depth in SAP HANA/S4, Blackline, Power BI, and advanced Excel to every role I take on.
@@ -521,7 +477,7 @@
       <div class="about-stats">
         <div class="stat-item">
           <div class="stat-number">AIR 25</div>
-          <div class="stat-label">CMA Final, ICAI</div>
+          <div class="stat-label">CMA Final, ICMAI</div>
         </div>
         <div class="stat-item">
           <div class="stat-number">200+</div>
@@ -737,7 +693,7 @@
       <div class="edu-card reveal">
         <div class="edu-badge">CMA</div>
         <div class="edu-degree">CMA Final — Cost & Management Accounting</div>
-        <div class="edu-institution">Institute of Cost Accountants of India (ICAI)</div>
+        <div class="edu-institution">Institute of Cost Accountants of India (ICMAI)</div>
         <div class="edu-period">Jan 2020 — Dec 2023</div>
         <span class="edu-score">55% · AIR 25 · Dec 2023</span>
         <p class="edu-detail">Premier professional qualification for management accountants in India. Specialisation in Cost Accounting, Finance Planning, Taxation & Financial Management.</p>
@@ -762,13 +718,15 @@
     <!-- CMA Intermediate -->
     <div style="margin-top: 2rem; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem;" class="reveal">
       <div class="edu-card">
-        <div class="edu-degree">CMA Intermediate — Group 1</div>
+        <div class="edu-badge">CMA</div>
+        <div class="edu-degree">Intermediate — Group 1</div>
         <div class="edu-institution">Institute of Cost Accountants of India</div>
         <div class="edu-period">Dec 2020</div>
         <span class="edu-score">55% · First Attempt</span>
       </div>
       <div class="edu-card">
-        <div class="edu-degree">CMA Intermediate — Group 2</div>
+        <div class="edu-badge">CMA</div>
+        <div class="edu-degree">Intermediate — Group 2</div>
         <div class="edu-institution">Institute of Cost Accountants of India</div>
         <div class="edu-period">Dec 2019</div>
         <span class="edu-score">80.25% · First Attempt</span>
@@ -826,7 +784,6 @@
       </p>
       <div class="contact-links reveal">
         <a href="mailto:cmanidhigupta@yahoo.com" class="contact-link">Email Me</a>
-        <a href="tel:+917007662700" class="contact-link">+91 7007662700</a>
         <a href="https://www.linkedin.com/in/nidhiguptacma/" target="_blank" class="contact-link">LinkedIn</a>
       </div>
     </div>
@@ -835,7 +792,7 @@
   <!-- FOOTER -->
   <footer>
     <span class="footer-text">© 2025 Nidhi Gupta CMA · AIR 25</span>
-    <span class="footer-text">ExxonMobil · HP · ICAI</span>
+    <span class="footer-text">ExxonMobil · HP · ICMAI</span>
   </footer>
 
   <script>
